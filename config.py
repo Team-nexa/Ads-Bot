@@ -24,14 +24,12 @@ os.makedirs(SESSION_DIR, exist_ok=True)
 MAX_ACCOUNTS = int(os.getenv("MAX_ACCOUNTS", 5))
 DEFAULT_DELAY = int(os.getenv("DEFAULT_DELAY", 300))
 
-LAST_NAME = "| by @NexaCoders"
-BIO_UPDATE = "Ads Powered By @NexaCoders 🚀"
+
 HOST_SESSION = "host"
 
-FORCE_CHANNEL = "NexaCoders"
-FORCE_GROUP = "NexaCodersChat"
+
 FORCE_JOIN_TEXT = """
-**╰_╯ WELCOME TO @NEXACODERS FREE ADS BOT**
+**╰_╯ WELCOME TO FREE ADS BOT**
 
 To unlock the full experience, please join our official channel and group first!
 
@@ -48,9 +46,9 @@ START_TEXT = """╰_╯ Welcome to @NexaCoders **Free Ads Bot** — The Future o
 • Smart Delays  
 • Multi-Account Support  
 
-For support contact: @NexaCoders"""
+"""
 
-DASHBOARD_TEXT = """╰_╯ @NexaCoders **Ads DASHBOARD**
+DASHBOARD_TEXT = """╰_╯ **Ads DASHBOARD**
 • Hosted Accounts: `{account_count}/{max_accounts}`
 • Ad Message: {ad_status}
 • Cycle Interval: {delay}s
