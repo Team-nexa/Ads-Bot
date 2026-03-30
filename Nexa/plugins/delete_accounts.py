@@ -10,10 +10,6 @@ from config import SESSION_DIR, API_ID, API_HASH
 from Nexa.database.users import users_db
 
 
-# ----------------------------
-# Helpers
-# ----------------------------
-
 def normalize_phone(phone: str):
     return str(phone).replace("+", "").replace(".session", "").strip()
 
@@ -29,10 +25,6 @@ def get_base_session_path(user_id: int, session_name: str):
 def get_session_file(user_id: int, session_name: str):
     return get_base_session_path(user_id, session_name) + ".session"
 
-
-# ----------------------------
-# Status Checker (UPDATED)
-# ----------------------------
 
 async def check_status(user_id: int, session_name: str):
 
@@ -56,7 +48,7 @@ async def check_status(user_id: int, session_name: str):
         if not await client.is_user_authorized():
             await client.disconnect()
 
-            # 🔥 Mark inactive in DB
+            
             await users_db.update_one(
                 {"_id": user_id},
                 {"$set": {f"account_status.{session_name}": "inactive"}}
@@ -66,7 +58,7 @@ async def check_status(user_id: int, session_name: str):
 
         await client.disconnect()
 
-        # 🔥 Mark active in DB
+        
         await users_db.update_one(
             {"_id": user_id},
             {"$set": {f"account_status.{session_name}": "active"}}
@@ -85,9 +77,6 @@ async def check_status(user_id: int, session_name: str):
         return "Inactive", "❌"
 
 
-# ----------------------------
-# Delete Menu
-# ----------------------------
 
 @bot.on_callback_query(filters.regex("^delete_accounts$"))
 async def delete_accounts_menu(client, query):
@@ -131,9 +120,6 @@ async def delete_accounts_menu(client, query):
     await safe_edit(query, text, buttons)
 
 
-# ----------------------------
-# Delete Account
-# ----------------------------
 
 @bot.on_callback_query(filters.regex(r"^delete_(.+)$"))
 async def delete_account(client, query):
@@ -163,9 +149,6 @@ async def delete_account(client, query):
     await safe_edit(query, text, buttons)
 
 
-# ----------------------------
-# Safe Edit
-# ----------------------------
 
 async def safe_edit(query, text, buttons):
     try:
