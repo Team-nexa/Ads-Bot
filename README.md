@@ -86,23 +86,6 @@ python3 -m Nexa
 
 ---
 
-## 📁 Project Structure
-
-```
-telegram-ads-bot/
-│── Nexa/
-│   ├── __init__.py
-│   ├── modules/
-│   ├── utils/
-│   └── database/
-│
-│── config.py
-│── requirements.txt
-│── README.md
-```
-
----
-
 ## 🔒 Notes
 
 - Make sure you start a logger bot
