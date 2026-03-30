@@ -17,3 +17,11 @@ A powerful and flexible Telegram bot designed to manage and deliver advertisemen
 • 💾 Database support for users & ads
 
 ## Tech Stack
+
+• Python 3.x
+
+• Pyrogram (Telegram Bot API)
+
+• MongoDB (Database)
+
+• Asyncio
