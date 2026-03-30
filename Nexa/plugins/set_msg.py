@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.enums import ParseMode
@@ -93,3 +104,4 @@ async def receive_ad_message(client, message):
             )
     except:
         pass
+# ── Powered by Nexa Coders ──

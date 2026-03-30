@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import MessageNotModified, RPCError
@@ -111,3 +122,5 @@ async def dashboard_callback(client, query: CallbackQuery):
 async def back_callback(client, query: CallbackQuery):
     await query.answer()
     await send_start_menu(client, query.message)
+
+# ── Powered by Nexa Coders ──

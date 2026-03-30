@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import filters
 from Nexa.bot import bot
 from Nexa.database.users import users_db
@@ -45,3 +56,5 @@ async def start_broadcast_callback(client, query):
         "Ads are being sent to all your groups/channels.\n"
         "Use Stop Ads ⏸️ to stop broadcasting."
     )
+
+# ── Powered by Nexa Coders ──

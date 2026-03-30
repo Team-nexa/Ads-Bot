@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import os
 from dotenv import load_dotenv
 
@@ -55,3 +66,4 @@ DASHBOARD_TEXT = """╰_╯ **Ads DASHBOARD**
 • Advertising Status: {running_status}
 
 ╰_╯ Choose an action below to continue"""
+# ── Powered by Nexa Coders ──

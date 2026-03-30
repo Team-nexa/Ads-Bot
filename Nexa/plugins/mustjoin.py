@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
@@ -69,3 +80,4 @@ async def mustjoin_retry(client: Client, query):
             f"Channel: {MUST_JOIN_CHANNEL}\n"
             f"Group: {MUST_JOIN_GROUP}"
         )
+# ── Powered by Nexa Coders ──

@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import asyncio
 from typing import Dict, Optional
 
@@ -31,3 +42,4 @@ def cleanup_finished():
         _running_tasks.pop(user_id, None)
 
 running_tasks = _running_tasks
+# ── Powered by Nexa Coders ──

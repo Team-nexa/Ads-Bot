@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.enums import ParseMode
@@ -93,3 +104,4 @@ async def custom_delay(client, message):
 
     buttons = InlineKeyboardMarkup([[InlineKeyboardButton("Back", callback_data="set_delay")]])
     await message.reply(updated_text, reply_markup=buttons, parse_mode=ParseMode.HTML)
+# ── Powered by Nexa Coders ──

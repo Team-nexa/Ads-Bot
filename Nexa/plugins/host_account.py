@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import os
 import asyncio
 import time
@@ -425,3 +436,4 @@ async def finalize_success(user_id: int):
 async def dashboard_cleanup(client, query):
     await cleanup(query.from_user.id)
     await query.answer("🏠 Dashboard")
+# ── Powered by Nexa Coders ──

@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import os
 from typing import List
 from config import SESSION_DIR
@@ -35,3 +46,4 @@ def delete_session(user_id: int, session_name: str) -> bool:
 
 def count_sessions(user_id: int) -> int:
     return len(list_user_sessions(user_id))
+# ── Powered by Nexa Coders ──

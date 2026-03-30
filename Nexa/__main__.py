@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from Nexa.bot import bot
 import Nexa.plugins  
 
@@ -20,3 +31,5 @@ def main():
 if __name__ == "__main__":
     main()
     
+
+# ── Powered by Nexa Coders ──

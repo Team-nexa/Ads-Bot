@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import os
 import asyncio
 import random
@@ -220,3 +231,5 @@ async def send_from_session(user_id: int, session_name: str, message: str, targe
         logger.error(traceback.format_exc())
     finally:
         await client.disconnect()
+
+# ── Powered by Nexa Coders ──

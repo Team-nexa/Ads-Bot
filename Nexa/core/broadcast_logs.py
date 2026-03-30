@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from telegram import Bot
 from config import LOGGER_BOT_TOKEN
 from Nexa.core.logger import logger
@@ -14,3 +25,4 @@ async def send_log(user_id: int, text: str):
         )
     except Exception as e:
         logger.error(f"Failed to send log to {user_id}: {e}")
+# ── Powered by Nexa Coders ──

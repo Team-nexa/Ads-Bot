@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from motor.motor_asyncio import AsyncIOMotorClient
 from config import MONGO_URI, DB_NAME
 
@@ -26,3 +37,4 @@ async def check_connection() -> bool:
     except Exception as e:
         print(f"[DB ERROR] Connection failed: {type(e).__name__}: {e}")
         return False
+# ── Powered by Nexa Coders ──

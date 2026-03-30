@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 import logging
 import os
 
@@ -16,3 +27,5 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger("BroadcastEngine")
+
+# ── Powered by Nexa Coders ──

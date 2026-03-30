@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from Nexa.bot import bot
@@ -18,3 +29,4 @@ async def auto_reply_callback(client, query):
         AUTO_REPLY_TEXT,
         reply_markup=keyboard
     )
+# ── Powered by Nexa Coders ──

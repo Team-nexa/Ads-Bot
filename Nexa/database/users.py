@@ -1,3 +1,14 @@
+#
+# ── Nexa Coders ─────────────────────────────────────
+# Telegram Ads Bot
+#
+# © 2026 NexaCoders. All Rights Reserved.
+# Github  : https://github.com/Team-nexa
+# Project : https://github.com/Team-nexa/Ads-Bot
+#
+# Licensed under the MIT License.
+# ───────────────────────────────────────────────────
+#
 from .mongo import db
 from datetime import datetime
 from pymongo.errors import DuplicateKeyError
@@ -132,3 +143,4 @@ async def delete_user(user_id: int):
         await users_db.delete_one({"_id": user_id})
     except Exception as e:
         print(f"[DB ERROR] delete_user ({type(e).__name__}): {e}")
+# ── Powered by Nexa Coders ──
