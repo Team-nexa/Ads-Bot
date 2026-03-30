@@ -42,7 +42,7 @@ async def start_broadcast_callback(client, query):
         {"$set": {"advertising": True}}
     )
 
-    # 🔥 Start broadcast (profile update happens inside broadcast_engine)
+    
     started = await start_broadcast(user_id)
 
     if not started:
