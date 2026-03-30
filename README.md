@@ -29,8 +29,8 @@ A powerful and flexible Telegram bot designed to manage and deliver advertisemen
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/telegram-ads-bot.git
-cd telegram-ads-bot
+git clone https://github.com/Team-nexa/Ads-Bot.git
+cd Ads-Bot
 ```
 
 ### 2. Create Virtual Environment
