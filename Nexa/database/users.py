@@ -4,16 +4,11 @@ from pymongo.errors import DuplicateKeyError
 
 users_db = db["users"]
 
-# -------------------------------
-# Helper: Validate user_id
-# -------------------------------
+
 def valid_user_id(user_id):
     return isinstance(user_id, int) and user_id > 0
 
 
-# -------------------------------
-# Get user by ID
-# -------------------------------
 async def get_user(user_id: int):
     if not valid_user_id(user_id):
         return None
@@ -24,9 +19,6 @@ async def get_user(user_id: int):
         return None
 
 
-# -------------------------------
-# Create or get user safely
-# -------------------------------
 async def get_or_create_user(user_id: int):
     if not valid_user_id(user_id):
         print("[DB WARNING] Invalid user_id")
@@ -59,9 +51,6 @@ async def get_or_create_user(user_id: int):
     return await get_user(user_id)
 
 
-# -------------------------------
-# Accounts management
-# -------------------------------
 async def add_account(user_id: int, session_name: str):
     if not valid_user_id(user_id) or not session_name:
         return
@@ -93,9 +82,6 @@ async def get_accounts(user_id: int):
     return []
 
 
-# -------------------------------
-# Advertising settings
-# -------------------------------
 async def set_broadcast_status(user_id: int, status: bool):
     if not valid_user_id(user_id):
         return
@@ -139,9 +125,6 @@ async def set_delay(user_id: int, delay: int):
         print(f"[DB ERROR] set_delay ({type(e).__name__}): {e}")
 
 
-# -------------------------------
-# Delete user safely
-# -------------------------------
 async def delete_user(user_id: int):
     if not valid_user_id(user_id):
         return
