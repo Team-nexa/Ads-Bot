@@ -1,8 +1,4 @@
-# Nexa/__main__.py
-
 from Nexa.bot import bot
-
-# Import plugins AFTER bot is defined
 import Nexa.plugins  
 
 
