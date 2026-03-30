@@ -1,6 +1,5 @@
-# This file ensures all plugins are loaded when the package is imported
+# Yha Manually Plugins Import krrh Yha Kuch Nhi Chedhe
 
-# Import each plugin manually
 from Nexa.plugins import test
 
 from Nexa.plugins import start
