@@ -1,23 +1,14 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from config import MONGO_URI, DB_NAME
 
-# -----------------------------
-# MongoDB client
-# -----------------------------
 client = AsyncIOMotorClient(MONGO_URI)
 
 # Select database from .env
 db = client[DB_NAME]
 
 
-# -----------------------------
-# Auto Cleanup Old Broken Index
-# -----------------------------
 async def ensure_indexes():
-    """
-    Removes old 'user_id_1' unique index if it exists.
-    Prevents DuplicateKeyError permanently.
-    """
+    
     try:
         indexes = await db.users.index_information()
         if "user_id_1" in indexes:
@@ -27,9 +18,6 @@ async def ensure_indexes():
         print(f"[DB WARNING] Index cleanup skipped: {e}")
 
 
-# -----------------------------
-# Check MongoDB connection
-# -----------------------------
 async def check_connection() -> bool:
     try:
         await client.admin.command("ping")
