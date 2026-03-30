@@ -42,4 +42,16 @@ venv\Scripts\activate     # Windows```
 
 #⚙️ Configuration
 Create a .env file or edit config.py:
-```
+```API_ID=
+API_HASH=
+BOT_TOKEN=
+LOGGER_BOT_TOKEN=
+MONGO_URI=
+MAX_ACCOUNTS=5
+DEFAULT_DELAY=300
+PROFILE_LAST_NAME="| By @NexaMeetup"
+BIO_TEXT="Ads Managed by @NexaCoders"
+START_IMAGE=```
+
+#Run the Bot
+```python3 -m Nexa```
