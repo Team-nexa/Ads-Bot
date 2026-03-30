@@ -27,3 +27,19 @@ A powerful and flexible Telegram bot designed to manage and deliver advertisemen
 • Asyncio
 
 # 📦 Installation
+
+###1. Clone the Repository
+```git clone https://github.com/yourusername/telegram-ads-bot.git
+cd telegram-ads-bot```
+
+###2. Create Virtual Environment
+```python -m venv venv
+source venv/bin/activate  # Linux
+venv\Scripts\activate     # Windows```
+
+###3. Install Requirements
+```pip install -r requirements.txt```
+
+###⚙️ Configuration
+Create a .env file or edit config.py:
+```
