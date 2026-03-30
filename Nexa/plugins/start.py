@@ -7,9 +7,6 @@ from config import START_IMAGE, START_TEXT, DASHBOARD_TEXT
 from Nexa.database.users import get_or_create_user, get_accounts, get_ad_message
 
 
-# ==========================
-# REUSABLE START MENU
-# ==========================
 
 async def send_start_menu(client, message):
     keyboard = InlineKeyboardMarkup([
@@ -35,18 +32,12 @@ async def send_start_menu(client, message):
         )
 
 
-# ==========================
-# /start COMMAND
-# ==========================
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_cmd(client, message):
     await send_start_menu(client, message)
 
 
-# ==========================
-# DASHBOARD CALLBACK
-# ==========================
 
 @bot.on_callback_query(filters.regex("^dashboard$"))
 async def dashboard_callback(client, query: CallbackQuery):
@@ -115,9 +106,6 @@ async def dashboard_callback(client, query: CallbackQuery):
         pass
 
 
-# ==========================
-# BACK BUTTON
-# ==========================
 
 @bot.on_callback_query(filters.regex("^back$"))
 async def back_callback(client, query: CallbackQuery):
