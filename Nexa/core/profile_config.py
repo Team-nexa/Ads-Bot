@@ -1,2 +1,2 @@
-CUSTOM_LAST_NAME = "★ By @Adxers"
-CUSTOM_BIO = "⚡ Power By @Adxers"
+CUSTOM_LAST_NAME = "★ By @NexaMeetup"
+CUSTOM_BIO = "⚡ Power By @NexaCoders"
