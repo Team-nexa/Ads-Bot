@@ -105,9 +105,11 @@ telegram-ads-bot/
 
 ## 🔒 Notes
 
-- Make sure your bot is **admin in channels/groups** before broadcasting  
+- Make sure you start a logger bot
+- the code have minor issues you want to fix it for run
 - Keep your `.env` file **private**  
 - Use a **valid MongoDB URI**  
+- please star this repo that's help us lot
 
 ---
 
