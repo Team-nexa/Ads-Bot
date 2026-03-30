@@ -3,7 +3,7 @@ from config import MONGO_URI, DB_NAME
 
 client = AsyncIOMotorClient(MONGO_URI)
 
-# Select database from .env
+
 db = client[DB_NAME]
 
 
