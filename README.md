@@ -55,3 +55,9 @@ START_IMAGE=```
 
 #Run the Bot
 ```python3 -m Nexa```
+
+
+Credit To Team Nexa - [Nexa-Team](https://t.me/NexaCoders)
+
+Support Channel - [Link](https://t.me/NexaCoders)
+Support Chat - [Link](https://t.me/NexaMeetup)
