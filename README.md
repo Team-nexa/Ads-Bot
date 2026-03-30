@@ -15,3 +15,5 @@ A powerful and flexible Telegram bot designed to manage and deliver advertisemen
 • 🧾 Custom ad formats (text, photo, video, buttons)
 
 • 💾 Database support for users & ads
+
+## Tech Stack
